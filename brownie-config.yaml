@@ -1,0 +1,20 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
+  - smartcontractkit/chainlink-brownie-contracts@1.0.2
+
+compiler:
+  solc:
+    remappings:
+     - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0"
+     - "@chainlink=smartcontractkit/chainlink-brownie-contracts@1.0.2"
+
+networks:
+  default: development
+  rinkeby:
+    vrf_coordinator: "0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B"
+    link_token: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
+    keyhash: "0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311"
+
+deployed:
+  nftfactory: "0x0133E9637dFf033e76345C3496c9a9176B715a6d"
+    
